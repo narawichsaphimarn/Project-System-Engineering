@@ -1,0 +1,24 @@
+
+<mat-card class ="logincard">
+
+  <mat-card-title class="cardtitle">เข้าสู่ระบบสมาชิก</mat-card-title>
+  <div class="example-container">
+<form role="form" (submit)="LoginSubmit()">
+  <mat-form-field>
+    <input matInput placeholder="username" [(ngModel)]="credentials.username" required name="username" #username id="username">
+</mat-form-field><br/>
+<mat-form-field>
+  <input matInput placeholder="password" type="password" [(ngModel)]="credentials.password" required name="password" #password id="password">
+</mat-form-field><br/>
+<button mat-raised-button (click)="login()" input type="submit" color="primary">Login</button>
+
+
+<br/>
+<br/>
+<div style="color:red;">{{text}}</div>
+
+
+</form>
+</div>
+</mat-card>
+

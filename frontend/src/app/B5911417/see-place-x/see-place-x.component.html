@@ -1,0 +1,25 @@
+<div align=center>
+  <mat-card class="example-card">
+    <div align=center>
+      <mat-card-title></mat-card-title>
+    </div>
+    <div *ngFor="let resev of reserveInfo">
+      <div>
+        <mat-card class="example">
+          <mat-card-content>
+            <mat-card-title>{{resev.sportEventF.eventName}}</mat-card-title>
+            <div align=left>
+              <p>ชื่อกิจกรรม : {{resev.sportEventF.eventName}}</p>
+              <p>สถานที่ : {{resev.placeEventF.placeName}}</p>
+              <p>พนักงานจอง : {{resev.staffF.nameRegisterStaff}}</p>
+              <p>จองตั้งแต่ : {{resev.sdate}} </p>
+              <p>ถึงวันที่ : {{resev.edate}} </p>
+              <p>เบอร์โทรติดต่อสถานที่ : {{resev.placeEventF.placeTel}} </p>
+            </div>
+          </mat-card-content>
+        </mat-card>
+        <br><br>
+      </div>
+    </div>
+  </mat-card>
+</div>
